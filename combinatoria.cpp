@@ -2,12 +2,11 @@
 
 int p(int n) {
     int resultado = 1;
-    int k = 1;
+    int k;
 
-    do {
+    for (k = 1; k <= n; k++) {
         resultado = resultado * k;
-        k = k + 1;
-    } while (k <= n);
+    }
 
     return resultado;
 }
